@@ -1,12 +1,11 @@
 FROM golang:1.8
 
-WORKDIR /go/src/app
+WORKDIR /go/src/bitbucket/zblizz/jwt-go
 COPY . .
 
+RUN go get
 RUN go build
 
-CMD ["app"]
+ENTRYPOINT [ "./jwt-go" ]
 
-
-# docker build -t . auth-app .
-# docker run -it --rm --name auth-running-app auth-app
+# TODO: need to add a mongo service to the mix
