@@ -1,15 +1,15 @@
 package main
 
 import (
-	r "bitbucket/zblizz/jwt-go/pkg/repositories"
-	svr "bitbucket/zblizz/jwt-go/pkg/server"
-	s "bitbucket/zblizz/jwt-go/pkg/services"
-	"bitbucket/zblizz/jwt-go/pkg/utils"
-
 	"fmt"
 
 	"go.uber.org/dig"
 	mgo "gopkg.in/mgo.v2"
+
+	r "bitbucket/zblizz/jwt-go/pkg/repositories"
+	svr "bitbucket/zblizz/jwt-go/pkg/server"
+	s "bitbucket/zblizz/jwt-go/pkg/services"
+	"bitbucket/zblizz/jwt-go/pkg/utils"
 )
 
 func connectDatabase(config *utils.Config) (*mgo.Session, error) {

@@ -1,10 +1,11 @@
 package server
 
 import (
-	utils "bitbucket/zblizz/jwt-go/pkg/utils"
 	"net/http"
-
+	
 	"github.com/gorilla/mux"
+
+	"bitbucket/zblizz/jwt-go/pkg/utils"
 )
 
 // NewRouter - creates the router for the service

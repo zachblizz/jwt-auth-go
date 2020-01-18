@@ -1,11 +1,12 @@
 package server
 
 import (
-	"bitbucket/zblizz/jwt-go/pkg/models"
-	utils "bitbucket/zblizz/jwt-go/pkg/utils"
 	"encoding/json"
 	"fmt"
 	"net/http"
+
+	"bitbucket/zblizz/jwt-go/models"
+	utils "bitbucket/zblizz/jwt-go/utils"
 )
 
 func adminMiddleware(next http.Handler) http.Handler {
