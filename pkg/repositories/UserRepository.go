@@ -1,7 +1,7 @@
 package repositories
 
 import (
-	"bitbucket/zblizz/jwt-go/models"
+	"bitbucket/zblizz/jwt-go/pkg/models"
 	"errors"
 
 	mgo "gopkg.in/mgo.v2"

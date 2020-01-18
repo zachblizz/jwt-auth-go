@@ -1,7 +1,7 @@
 package server
 
 import (
-	utils "bitbucket/zblizz/jwt-go/utils"
+	utils "bitbucket/zblizz/jwt-go/pkg/utils"
 	"net/http"
 
 	"github.com/gorilla/mux"

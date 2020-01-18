@@ -1,11 +1,12 @@
 package services
 
 import (
-	"bitbucket/zblizz/jwt-go/models"
-	r "bitbucket/zblizz/jwt-go/repositories"
-	"bitbucket/zblizz/jwt-go/utils"
 	"net/http"
 	"time"
+
+	"bitbucket/zblizz/jwt-go/pkg/models"
+	r "bitbucket/zblizz/jwt-go/pkg/repositories"
+	"bitbucket/zblizz/jwt-go/pkg/utils"
 )
 
 // UserService - service used to get access to user repo

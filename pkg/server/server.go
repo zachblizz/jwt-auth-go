@@ -1,8 +1,8 @@
 package server
 
 import (
-	s "bitbucket/zblizz/jwt-go/services"
-	utils "bitbucket/zblizz/jwt-go/utils"
+	s "bitbucket/zblizz/jwt-go/pkg/services"
+	utils "bitbucket/zblizz/jwt-go/pkg/utils"
 	"log"
 	"net/http"
 

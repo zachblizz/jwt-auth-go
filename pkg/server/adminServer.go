@@ -1,12 +1,18 @@
 package server
 
 import (
-	"bitbucket/zblizz/jwt-go/models"
-	utils "bitbucket/zblizz/jwt-go/utils"
+	"bitbucket/zblizz/jwt-go/pkg/models"
+	utils "bitbucket/zblizz/jwt-go/pkg/utils"
 	"encoding/json"
 	"fmt"
 	"net/http"
 )
+
+func adminMiddleware(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		next.ServeHTTP(w, r)
+	})
+}
 
 func (s *Server) getUsers(w http.ResponseWriter, req *http.Request) {
 	collection, ok := req.URL.Query()["collection"]

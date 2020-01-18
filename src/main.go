@@ -1,10 +1,10 @@
 package main
 
 import (
-	r "bitbucket/zblizz/jwt-go/repositories"
-	svr "bitbucket/zblizz/jwt-go/server"
-	s "bitbucket/zblizz/jwt-go/services"
-	"bitbucket/zblizz/jwt-go/utils"
+	r "bitbucket/zblizz/jwt-go/pkg/repositories"
+	svr "bitbucket/zblizz/jwt-go/pkg/server"
+	s "bitbucket/zblizz/jwt-go/pkg/services"
+	"bitbucket/zblizz/jwt-go/pkg/utils"
 
 	"fmt"
 
