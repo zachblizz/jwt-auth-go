@@ -1,12 +1,13 @@
 package server
 
 import (
-	s "bitbucket/zblizz/jwt-go/services"
-	utils "bitbucket/zblizz/jwt-go/utils"
 	"log"
 	"net/http"
-
+	
 	"github.com/rs/cors"
+
+	s "bitbucket/zblizz/jwt-go/pkg/services"
+	utils "bitbucket/zblizz/jwt-go/pkg/utils"
 )
 
 // Server - server struct

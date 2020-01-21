@@ -1,15 +1,16 @@
 package services
 
 import (
-	"bitbucket/zblizz/jwt-go/models"
-	r "bitbucket/zblizz/jwt-go/repositories"
-	"bitbucket/zblizz/jwt-go/utils"
 	"errors"
 	"net/http"
 	"time"
-
+	
 	"github.com/dgrijalva/jwt-go"
 	"golang.org/x/crypto/bcrypt"
+
+	"bitbucket/zblizz/jwt-go/pkg/models"
+	r "bitbucket/zblizz/jwt-go/pkg/repositories"
+	"bitbucket/zblizz/jwt-go/pkg/utils"
 )
 
 // AuthService - the auth service struct

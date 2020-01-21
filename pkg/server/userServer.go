@@ -1,12 +1,13 @@
 package server
 
 import (
-	"bitbucket/zblizz/jwt-go/models"
-	utils "bitbucket/zblizz/jwt-go/utils"
 	"encoding/json"
 	"fmt"
 	"net/http"
 	"time"
+
+	"bitbucket/zblizz/jwt-go/pkg/models"
+	utils "bitbucket/zblizz/jwt-go/pkg/utils"
 )
 
 func (s *Server) test(w http.ResponseWriter, req *http.Request) {
